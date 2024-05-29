@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function MyInfo() {
   return (
@@ -11,6 +12,13 @@ function MyInfo() {
         <li>Фінляндія</li>
         <li>Латвія</li>
       </ul>
+      <nav>
+        <ul>
+          <li><Link to="/personal-info">Особиста інформація</Link></li>
+          <li><Link to="/group-info">Номер групи</Link></li>
+          <li><Link to="/hobbies">Мої хобі</Link></li>
+        </ul>
+      </nav>
     </div>
   );
 }
